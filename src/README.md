@@ -3,10 +3,10 @@ home: true
 layout: BlogHome
 icon: home
 title: 博客主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
+heroImage: https://theme-hope-assets.vuejs.press/logo.svg,
+heroText: 一只程序熊
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 思维無界，生命無价，码力無限！
 projects:
   - icon: project
     name: 项目名称
