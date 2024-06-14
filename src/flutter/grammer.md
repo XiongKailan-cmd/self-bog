@@ -6,13 +6,13 @@ sticky: true
 
 # Flutter 语法
 
-## 注释方法
+## **注释方法**
 
 方法一： **\/\/** <br/>
 方法二： **/\*\* \*/** <br/>
 方法三： **\/\/\/** <br/>
 
-## 变量声明
+## **变量声明**
 
 var  -> 类型推断
 
@@ -80,4 +80,72 @@ var list = List.filled(2, "");
 // 指定集合类型
 var list =  List<String>.filled(2,"")
 
+
+<!-- Map类型 -->
+// 定义： 
+var map = {
+    // 重点：键必须为字符串类型
+    "name": 2
+}
+
+// 存
+map['age'] = 2
+
+// 取
+print(map['name'])
+
+```
+
+## 运算符
+
+``` dart
+<!-- 算术运算符 -->
++ - * / % ~/(取整)
+
+<!-- 关系运算符 -->
+== (等于) != (不等于) > < >= <=
+
+<!-- 逻辑运算符 -->
+! (取反)  && (且)  || (或)
+
+<!-- 赋值运算符 -->
+// 普通赋值运算
+ =  ??= (当变量为空时赋值, 例：b??=100)
+
+// 复杂赋值运算
++= -= *= /= %= ~=
+
+<!-- 条件表达式 -->
+// if else switch case
+
+// 三目运算符
+? "":""
+
+// ??运算符
+例： b = a ?? 10
+
+```
+
+## **类型转换**
+
+``` dart
+<!-- Number与String -->
+Number -> String   toString()
+String -> Number   int.parse(str)
+
+<!-- double与String -->
+double -> String  toString( )
+String -> double  double.parse()
+
+<!-- 其他类型与bool -->
+isEmpty() : 判断字符串
+
+isNaN() : 值为NaN
+
+```
+
+## 循环
+
+``` dart
+++ --  for  while  do...while  break continue
 ```
