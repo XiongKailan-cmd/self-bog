@@ -4,4 +4,8 @@ export default navbar([
   "/",
   "/demo/",
   '/flutter/',
+  {
+    text: "ThreeJs",
+    link: "/threejs/",
+  },
 ]);
