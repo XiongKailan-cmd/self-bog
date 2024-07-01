@@ -48,16 +48,42 @@ scene.add(axesHelper)
 
 ```
 
-## 控制器
+## 轨道控制器
+
+:::tip 提示
+控制器拖动原理 - 相机围绕物体做旋转
+:::
 
 ```js
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-/**
- * 控制器拖动原理 - 相机围绕物体做旋转
- */
 
 // 创建控制器
 const controls = new OrbitControls(camera, renderer.domElement)
 // 更新控制器
 controls.update()
+// 自动旋转
+controls.autoRate()
+```
+
+## 物体位移
+
+:::tip 物体位移原理
+始终相对于父元素作位移
+    - 父元素为场景时，位移坐标为世界坐标
+    - 父元素为节点时，位移相对于该节点 
+:::
+
+```js
+// 创建集合体
+const geometry = new THREE.BoxGeometry(1, 1, 1);
+
+// 创建材质
+const material = new THREE.MeshBasicMaterial({color: 0x00ff00})
+
+// 创建旺哥
+const cube = new THREE.Mesh(geometry, material)
+
+// 位移
+cube.position.set(3,0,0)
+
 ```

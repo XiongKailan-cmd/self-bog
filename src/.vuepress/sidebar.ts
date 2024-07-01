@@ -16,6 +16,12 @@ export default sidebar({
       prefix: "flutter/",
       children: "structure",
     },
+    {
+      text: "ThreeJs",
+      icon: "book",
+      prefix: "threejs/",
+      children: "structure",
+    },
     "intro",
   ],
 });
